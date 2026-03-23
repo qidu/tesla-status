@@ -1,0 +1,42 @@
+{
+  "name": "qidu@tesla-status",
+  "version": "1.0.0",
+  "description": "Tesla vehicle status skill for OpenClaw via TeslaMate API",
+  "main": "tesla_status.py",
+  "scripts": {
+    "test": "./test_skill.sh"
+  },
+  "keywords": [
+    "openclaw",
+    "tesla",
+    "teslamate",
+    "vehicle",
+    "status",
+    "skill"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qidu/tesla-status"
+  },
+  "bugs": {
+    "url": "https://github.com/qidu/tesla-status/issues"
+  },
+  "homepage": "https://github.com/qidu/tesla-status#readme",
+  "dependencies": {
+    "requests": ">=2.25.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.7"
+  },
+  "files": [
+    "SKILL.md",
+    "tesla_status.py",
+    "tesla-status.sh",
+    "test_skill.sh",
+    "README.md",
+    "example_usage.md"
+  ]
+}
