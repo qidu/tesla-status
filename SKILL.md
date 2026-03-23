@@ -50,7 +50,7 @@ Query Tesla vehicle status and information via TeslaMate API.
 
 ## Prerequisites
 
-- **TeslaMate** - Self-hosted data logger ([GitHub](https://github.com/qidu/teslamate))
+- **TeslaMate** - Self-hosted data logger ([GitHub](https://github.com/teslamate-org/teslamate))
 - **TeslaMate API** - REST API for TeslaMate ([GitHub](https://github.com/qidu/teslamateapi))
 - **Python 3** with `requests` module installed
 

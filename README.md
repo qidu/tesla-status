@@ -1,4 +1,9 @@
-# Tesla Status Skill for OpenClaw
+# Tesla Status Skill for OpenClaw 🚗
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-green.svg)](https://clawhub.ai)
+[![Python 3.7+](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)
+[![TeslaMate API](https://img.shields.io/badge/TeslaMate-API-orange.svg)](https://github.com/qidu/teslamateapi)
 
 A skill for checking Tesla vehicle status through TeslaMate API.
 
@@ -16,7 +21,7 @@ A skill for checking Tesla vehicle status through TeslaMate API.
 
 1. **TeslaMate** - Self-hosted Tesla data logger
    ```bash
-   # See: https://github.com/qidu/teslamate
+   # See: https://github.com/teslamate-org/teslamate
    ```
 
 2. **TeslaMate API** - REST API for TeslaMate
@@ -108,16 +113,32 @@ alias tesla='~/.openclaw/skills/tesla-status/tesla-status.sh'
 tesla status
 ```
 
-## Publishing Requirements Met
+## Publishing to clawhub.ai
 
-✅ **YAML Frontmatter** - Includes `name`, `description`, `homepage`, `metadata`
-✅ **Metadata** - Includes `emoji`, `requires`, `install` instructions
-✅ **Clear Usage Guidelines** - "When to Use" and "When NOT to Use"
-✅ **Examples** - Practical examples with expected output
-✅ **Troubleshooting** - Common issues and solutions
-✅ **Related Skills** - Mentions other relevant skills
-✅ **API Documentation** - Lists endpoints used
-✅ **Configuration Options** - Environment variables explained
+This skill meets all requirements for publishing to clawhub.ai:
+
+### ✅ Skill Structure Requirements
+- **YAML Frontmatter** - Includes `name`, `description`, `homepage`, `metadata`
+- **Metadata** - Includes `emoji`, `requires`, `install` instructions
+- **Clear Usage Guidelines** - "When to Use" and "When NOT to Use"
+- **Examples** - Practical examples with expected output
+- **Troubleshooting** - Common issues and solutions
+- **Related Skills** - Mentions other relevant skills
+- **API Documentation** - Lists endpoints used
+- **Configuration Options** - Environment variables explained
+
+### ✅ Technical Requirements
+- **No `manifest.json` required** - Skills are defined by SKILL.md frontmatter
+- **`.clawhub/origin.json`** - Added for registry tracking
+- **Complete package.json** - Includes OpenClaw-specific metadata
+- **Tested implementation** - Verified working with TeslaMate API
+- **MIT License** - Open source licensing
+
+### ✅ Publishing Checklist
+1. **GitHub Repository** - Create public repository with all files
+2. **clawhub.ai Submission** - Submit skill to registry
+3. **Version Tagging** - Use semantic versioning (v1.0.0)
+4. **Documentation** - Ensure README and SKILL.md are complete
 
 ## License
 
@@ -129,7 +150,7 @@ Feel free to submit issues or improvements via GitHub.
 
 ## Links
 
-- **TeslaMate**: https://github.com/qidu/teslamate
+- **TeslaMate**: https://github.com/teslamate-org/teslamate
 - **TeslaMate API**: https://github.com/qidu/teslamateapi
 - **OpenClaw**: https://github.com/openclaw/openclaw
 - **ClawHub**: https://clawhub.com

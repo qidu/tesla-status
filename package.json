@@ -1,5 +1,5 @@
 {
-  "name": "qidu@tesla-status",
+  "name": "@qidu/tesla-status",
   "version": "1.0.0",
   "description": "Tesla vehicle status skill for OpenClaw via TeslaMate API",
   "main": "tesla_status.py",
@@ -8,23 +8,29 @@
   },
   "keywords": [
     "openclaw",
+    "clawhub",
     "tesla",
     "teslamate",
     "vehicle",
     "status",
-    "skill"
+    "skill",
+    "api",
+    "automation",
+    "iot",
+    "monitoring"
   ],
-  "author": "Your Name",
+  "author": "qidu <teric@outlook.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qidu/tesla-status"
+    "url": "https://github.com/qidu/tesla-status.git"
   },
   "bugs": {
     "url": "https://github.com/qidu/tesla-status/issues"
   },
   "homepage": "https://github.com/qidu/tesla-status#readme",
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
     "requests": ">=2.25.0"
   },
   "engines": {
@@ -37,6 +43,20 @@
     "tesla-status.sh",
     "test_skill.sh",
     "README.md",
-    "example_usage.md"
-  ]
+    "example_usage.md",
+    "package.json",
+    "LICENSE",
+    "CHANGELOG.md",
+    "requirements.txt",
+    ".gitignore",
+    ".clawhub/origin.json"
+  ],
+  "openclaw": {
+    "skill": true,
+    "category": "iot",
+    "tags": ["tesla", "vehicle", "iot", "automation", "monitoring", "api"],
+    "emoji": "🚗",
+    "requires": ["curl", "python3", "requests"],
+    "testedWith": ["TeslaMate API v1.24.2"]
+  }
 }
